@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="630dp"
+    android:background="@drawable/background"
+    tools:context="com.farahhannah.fstgrabcarservice.BookingActivity">
+
+    <ImageView
+        android:id="@id/btnUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/user" />
+
+    <Button
+        android:id="@+id/btnViewUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/btnUser"
+        android:layout_centerHorizontal="true"
+        android:background="@null" />
+
+    <Spinner
+        android:id="@+id/destination"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnUser"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="@color/colorAccent"
+        android:popupBackground="@color/colorPrimary" />
+
+    <Spinner
+        android:id="@+id/noOfPassenger"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/destination"
+        android:layout_alignStart="@+id/destination"
+        android:layout_below="@+id/seldes"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorAccent"
+        android:popupBackground="@color/colorPrimary" />
+
+    <Spinner
+        android:id="@+id/selectDriver"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/seldriver"
+        android:layout_alignEnd="@+id/destination"
+        android:layout_alignRight="@+id/destination"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorAccent"
+        android:popupBackground="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/btnUser"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnUser"
+        android:layout_marginBottom="83dp"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorLink="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/seldes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnUser"
+        android:layout_alignRight="@+id/btnUser"
+        android:layout_alignTop="@+id/destination"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1. Select your destination :"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/noOfPassenger"
+        android:layout_alignEnd="@+id/btnUser"
+        android:layout_alignRight="@+id/btnUser"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="2. Number of Passenger :"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/seldriver"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num"
+        android:layout_alignStart="@+id/num"
+        android:layout_below="@+id/num"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="3. Select Driver :"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seldriver"
+        android:layout_alignStart="@+id/seldriver"
+        android:layout_below="@+id/seldriver"
+        android:layout_marginTop="34dp"
+        android:background="@null"
+        android:text="4. Pick Time : "
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateDisplay"
+        android:layout_alignLeft="@+id/btnTime"
+        android:layout_alignStart="@+id/btnTime"
+        android:background="@null"
+        android:text="5. Pick date: "
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/timeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/selectDriver"
+        android:layout_alignRight="@+id/selectDriver"
+        android:layout_alignTop="@+id/btnTime"
+        android:ems="10"
+        android:hint="11AM"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTime"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/seldriver"
+        android:layout_toRightOf="@+id/seldriver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

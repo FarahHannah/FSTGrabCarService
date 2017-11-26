@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "296712877972",
+    "firebase_url": "https://fstgrabcarservice.firebaseio.com",
+    "project_id": "fstgrabcarservice",
+    "storage_bucket": "fstgrabcarservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296712877972:android:d18758a76532ebd1",
+        "android_client_info": {
+          "package_name": "com.farahhannah.fstgrabcarservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296712877972-vj4v37d1jdsbjod10a0diaev7e18cifr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farahhannah.fstgrabcarservice",
+            "certificate_hash": "f170dcdae180eee2bca2d85572c4db9bfbfda29b"
+          }
+        },
+        {
+          "client_id": "296712877972-b38lpffto992qj7n5016r5vks52ialui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvh7Fc8c2RzUeJW6nLfT1qd6FFq2yDfZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296712877972-b38lpffto992qj7n5016r5vks52ialui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

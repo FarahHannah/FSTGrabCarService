@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.farahhannah.fstgrabcarservice.UserActivity">
+
+    <ImageView
+        android:id="@id/btnUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/user" />
+
+    <Button
+        android:id="@+id/btnViewUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btnUser"
+        android:layout_alignStart="@+id/btnUser"
+        android:layout_alignTop="@+id/btnUser"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Make A Booking"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnBook"
+        android:layout_alignStart="@+id/btnBook"
+        android:layout_below="@+id/btnBook"
+        android:layout_marginTop="62dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:text="List of Booking"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/btnUser"
+        android:layout_alignRight="@+id/btnUser"
+        android:layout_below="@+id/btnList"
+        android:layout_marginTop="67dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Logout"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
